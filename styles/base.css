@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 main {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 2rem 0;
     display: grid;
@@ -120,7 +120,8 @@ section {
     background-color: var(--primary-color);
     border-radius: 6px 6px 0 0;
     color: #fff;
-    max-height: 42px;
+    font-size: 14px;
+    max-height: 48px;
 }
 
 .card-content {
@@ -140,7 +141,7 @@ section {
 }
 
 .card-content .profil {
-    width: 140px;
+    max-width: 140px;
 }
 
 .card-content p {
@@ -172,6 +173,15 @@ section {
 
 .content-2 p {
     grid-area: p2;
+}
+
+.web a {
+    text-decoration: none;
+}
+
+.web a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .quote {
