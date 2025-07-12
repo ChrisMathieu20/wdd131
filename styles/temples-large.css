@@ -12,8 +12,9 @@
         padding: 0 10%;
     }
     
-    header h2 {
+    header p {
         text-align: left;
+        font-size: 1.5rem;
     }
 
     #menu {

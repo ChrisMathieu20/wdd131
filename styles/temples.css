@@ -31,8 +31,9 @@ header {
     position: relative;
 }
 
-header h2 {
+header p {
     display: block;
+    font-size: 1.25rem;
 }
 
 #menu {
@@ -117,10 +118,16 @@ figure img {
 
 figcaption {
     text-align: center;
-    color: var(--primary-color-color);
+    color: var(--primary-color);
 }
 
 h1 {
     text-align: center;
     font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+main h2 {
+    font-size: 1rem;
+    color: var(--secondary-color);
 }
