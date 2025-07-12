@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #1d4d72;
+    --secondary-color: #ffc328;
+    --bgnav--color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+header {
+    position: relative;
+}
+
+header h2 {
+    display: block;
+}
+
+#menu {
+    font-size: 1.75rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.navigation {
+    background-color: var(--bgnav--color);
+    color: #fff;
+    padding: .75rem;
+    width: 100vw;
+    height: 91vh;
+    font-size: 1.5rem;
+    align-content: center;
+    position: absolute;
+    top: 3.3rem;
+    left: 0;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav li {
+    margin: .25rem 0;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.open {
+    display: block;
+}
+
+.active a {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+main {
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main-figure {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--primary-color-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1rem;
+}
