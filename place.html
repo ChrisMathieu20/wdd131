@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="Explore Madagascar's unique wildlife like lemurs, ancient baobab trees, and the dramatic Tsingy formations, all shaped by the island's diverse tropical weather.">
+    <meta name="author" content="Christian Mathieu Ramasinjanahary">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/madagascar-baobab-large.webp">
+                <source media="(min-width: 500px)" srcset="images/madagascar-tsingy-medium.webp">
+                <img src="images/madagascar-lemur-small.webp" alt="Madagascar Tourism" width="500" height="333">
+            </picture>
+        </div>
+        <section id="data">
+            <h2>Data</h2>
+            <ul class="label">
+                <li>Area:</li>
+                <li>Population:</li>
+                <li>Capital:</li>
+                <li>Languages:</li>
+                <li>Currency:</li>
+                <li>Time Zone:</li>
+                <li>Calling Code:</li>
+                <li>Internet LTD:</li>
+            </ul>
+            <ul class="value">
+                <li>587041 km<sup>2</sup></li>
+                <li>31,195,932</li>
+                <li>Antananarivo</li>
+                <li>Malagasy, French</li>
+                <li>MGA - Malagasy Ariary</li>
+                <li>UTC+3</li>
+                <li>+261</li>
+                <li>.mg</li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather_clouds_sunny_icon.svg" alt="Weather Clouds Sunny">
+            <ul class="label">
+                <li>Temperature:</li>
+                <li>Conditions:</li>
+                <li>Wind:</li>
+                <li>WindChill:</li>
+            </ul>
+            <ul class="value">
+                <li><span id="temperature">17</span>°C</li>
+                <li>Partly Cloudy</li>
+                <li><span id="wind">18</span> km/h</li>
+                <li><span id="windchill">9.8</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> – Christian Mathieu Ramasinjanahary – Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
