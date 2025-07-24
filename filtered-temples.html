@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="This site is dedicated to providing inspiring information, historical insights, and visual highlights of temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Christian Mathieu Ramasinjanahary">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li class="active"><a href="filtered-temples.html">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple - Home</h1>
+        <h2>Album of All Temples</h2>
+        <div class="main-figure"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> – Christian Mathieu Ramasinjanahary – Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
