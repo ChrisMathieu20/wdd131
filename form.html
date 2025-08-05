@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="">
+    <meta name="author" content="Christian Mathieu Ramasinjanahary">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="GET">
+            <div class="product">
+                <label for="product">Product Name</label>
+                <select name="product" id="product">
+                    <option value="">Select a Product ... &#9662;</option>
+                </select>
+            </div>
+            <div class="rating">
+                <label for="stars">Overall Rating</label>
+                <div class="stars">
+                    <input type="radio" name="rating" id="fivestar" value="5" required><label for="fivestar"></label>
+                    <input type="radio" name="rating" id="fourstar" value="4" required><label for="fourstar"></label>
+                    <input type="radio" name="rating" id="threestar" value="3" required><label for="threestar"></label>
+                    <input type="radio" name="rating" id="twostar" value="2" required><label for="twostar"></label>
+                    <input type="radio" name="rating" id="onestar" value="1" required><label for="onestar"></label>
+                </div>
+            </div>
+            <div class="dateInstal">
+                <label for="date">Date of Installation</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="features">
+                <div>Which features did you find useful in the product?<br><em>(Check all that apply)</em></div>
+                <label><input type="checkbox" name="durability" id="durability"> Durability</label>
+                <label><input type="checkbox" name="easy" id="easy"> Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance"> Performance</label>
+                <label><input type="checkbox" name="design" id="design"> Design</label>
+            </div>
+            <div class="review">
+                <label for="review">Written Review</label>
+                <textarea name="review" id="review"></textarea>
+            </div>
+            <div class="name">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="button">
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> – Christian Mathieu Ramasinjanahary – Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
