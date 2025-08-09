@@ -1,0 +1,29 @@
+@media (min-width: 769px) {
+    header {
+        padding: 2% 0;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 6% 10%;
+    }
+
+    .color-schema {
+        height: auto;
+    }
+
+    .wf-img-large {
+        display: none;
+    }
+
+    .mobile {
+        max-width: 425px;
+    }
+
+    .large {
+        display: block;
+    }
+}
