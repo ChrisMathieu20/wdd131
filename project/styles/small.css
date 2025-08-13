@@ -27,7 +27,7 @@ header {
     text-align: center;
     padding: 3% 0;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     justify-content: space-between;
     align-items: baseline;
     align-content: center;
@@ -50,16 +50,17 @@ button {
     background: none;
     position: absolute;
     right: 3%;
+    cursor: pointer;
 }
 
-.hamberger::after {
+.hamburger::before {
     content: "≡";
     color: var(--accent2-color);
 }
 
 nav {
     background-color: var(--accent1-color);
-    padding: .8rem;
+    padding: 1.2rem .8rem;
     margin-top: .8rem;
     display: none;
 }
@@ -75,11 +76,15 @@ nav a {
     color: var(--accent3-color);
 }
 
+.menu.show {
+    display: block;
+}
+
 main {
     background-color: var(--secondary-color);
     color: #fff;
     padding: 1.6rem 4%;
-    font-size: .9rem;
+    font-size: .8rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -110,80 +115,6 @@ main li {
     line-height: 1.4rem;
 }
 
-.color-schema {
-    background-color: #ccc;
-    color: var(--accent1-color);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 4%;
-    margin: .5rem 0;
-    padding: 1.5rem;
-    height: 21rem;
-}
-
-.palette p {
-    margin-left: 10%;
-}
-
-.color {
-    width: 100%;
-    height: 60px;
-    border-radius: .6rem;
-    margin-bottom: .4rem;
-    position: relative;
-}
-
-.primary {
-    background-color: var(--primary-color);
-}
-
-.primary::after {
-    content: "#FFFF00";
-    color: var(--accent1-color);
-}
-
-.secondary {
-    background-color: var(--secondary-color);
-}
-
-.secondary::after {
-    content: "#0B2027";
-    color: var(--accent3-color);
-}
-
-.accent1 {
-    background-color: var(--accent1-color);
-}
-
-.accent1::after {
-    content: "#202A25";
-    color: var(--primary-color);
-}
-
-.accent2 {
-    background-color: var(--accent2-color);
-}
-
-.accent2::after {
-    content: "#568259";
-    color: var(--accent1-color);
-}
-
-.accent3 {
-    background-color: var(--accent3-color);
-}
-
-.accent3::after {
-    content: "#F1FFFA";
-    color: var(--secondary-color);
-}
-
-.primary::after,
-.secondary::after,
-.accent1::after,
-.accent2::after,
-.accent3::after {
-    position: absolute;
-    bottom: .4rem;
-    left: 10%;
+section {
+    padding: 4%;
 }
