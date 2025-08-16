@@ -21,11 +21,15 @@ p {
     line-height: 1.4rem;
 }
 
+header,
+footer {
+    text-align: center;
+    padding: 3% 0;
+}
+
 header {
     background-color: var(--accent3-color);
     color: var(--secondary-color);
-    text-align: center;
-    padding: 3% 0;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-between;
@@ -116,5 +120,11 @@ main li {
 }
 
 section {
-    padding: 4%;
+    padding: 10% 4%;
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: var(--accent3-color);
+    font-size: .8rem;
 }

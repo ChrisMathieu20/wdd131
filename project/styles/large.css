@@ -49,4 +49,12 @@
     main p {
         font-size: 1rem;
     }
+
+    section {
+        padding: 4%;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
 }
