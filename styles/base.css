@@ -1,0 +1,199 @@
+:root {
+    --primary-color: #1d4d72;
+    --secondary-color: #ffc328;
+    --bgnav--color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 2fr auto 1.5fr;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+strong {
+    color: var(--primary-color);
+}
+    
+#course-title {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+nav {
+    background-color: var(--bgnav--color);
+    padding: 0 12rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 4rem;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+main {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-areas: 
+        "h1 h1"
+        "section-1 section-2";
+    gap: 10px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    grid-area: h1;
+}
+
+section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.section-1 {
+    grid-area: section-1;
+    grid-template-areas: 
+        "header header header"
+        "content content content";
+}
+
+.section-2 {
+    grid-area: section-2;
+    grid-template-areas: 
+        "header header"
+        "content content";
+}
+
+.card {
+    display: grid;
+    gap: 10px;
+}
+
+.column-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.column-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-header {
+    grid-area: header;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+    font-size: 14px;
+    max-height: 48px;
+}
+
+.card-content {
+    grid-area: content;
+    padding: 14px 30px;
+}
+
+.card-content div {
+    display: grid;
+    margin: 20px 0 30px;
+}
+
+.card-content img {
+    width: 100%;
+    margin: 0 auto;
+    /* align-self: center; */
+}
+
+.card-content .profil {
+    max-width: 140px;
+}
+
+.card-content p {
+    line-height: 30px;
+    align-self: center;
+}
+
+.content-1 {
+    grid-template-areas: 
+        "img1 p1 p1";
+}
+
+.content-1 img {
+    grid-area: img1;
+}
+
+.content-1 p {
+    grid-area: p1;
+}
+
+.content-2 {
+    grid-template-areas: 
+        "p2 p2 img2";
+}
+
+.content-2 img {
+    grid-area: img2;
+}
+
+.content-2 p {
+    grid-area: p2;
+}
+
+.web a {
+    text-decoration: none;
+}
+
+.web a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.quote {
+    font-style: italic;
+    color: var(--bgnav--color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p:last-child span {
+    color: var(--secondary-color);
+}
