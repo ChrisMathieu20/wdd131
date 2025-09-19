@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #1d4d72;
-    --secondary-color: #ffc328;
+    --primary-color: #415a77;
+    --secondary-color: #778da9;
+    --accent-color: #e0e1dd;
     --bgnav--color: #333;
 }
 
@@ -20,8 +21,8 @@ body {
 }
 
 header, footer {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 span {
@@ -47,7 +48,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav li {
@@ -61,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 main {
@@ -181,7 +182,7 @@ section {
 
 .web a:hover {
     text-decoration: underline;
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .quote {
