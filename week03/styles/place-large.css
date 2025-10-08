@@ -39,10 +39,6 @@
         box-shadow: 2px 2px 4px #444;
     }
 
-    .s-title-h2:hover {
-        color: var(--accent1-color);
-    }
-
     .section h2 {
         font-size: 1.6rem;
     }
