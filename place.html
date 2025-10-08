@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="">
+    <meta name="author" content="Christian Mathieu Ramasinjanahary">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-medium.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <span>Madagascar</span>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/madagascar-large.webp" media="(min-width: 768px)">
+                <source srcset="images/madagascar-medium.webp" media="(min-width: 500px)">
+                <img src="images/madagascar-small.webp" alt="Madagascar Tourism Resources" width="500" height="300">
+            </picture>
+        </div>
+        <div class="section" id="data">
+            <div class="s-title">
+                <div class="s-title-h2"><h2>Data</h2></div>
+            </div>
+            <div class="s-content">
+                <div class="label">
+                    <p>Area:</p>
+                    <p>Population:</p>
+                    <p>Capital:</p>
+                    <p>Languages:</p>
+                    <p>Currency:</p>
+                    <p>Time Zone:</p>
+                    <p>Calling Code:</p>
+                    <p>Internet LTD:</p>
+                </div>
+                <div class="value">
+                    <p>587,041 sq km</p>
+                    <p>27,691,018</p>
+                    <p>Antananarivo</p>
+                    <p>Malagasy, French</p>
+                    <p>Malagasy Ariary</p>
+                    <p>UTC+3</p>
+                    <p>+261</p>
+                    <p>.mg</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="weather">
+            <div class="s-title weather">
+                <div class="s-title-h2"><h2>Weather</h2></div>
+                <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Sun Sunny with Clouds">
+            </div>
+            <div class="s-content">
+                <div class="label">
+                    <p>Temperature:</p>
+                    <p>Conditions:</p>
+                    <p>Wind:</p>
+                    <p>Wind Chill:</p>
+                </div>
+                <div class="value">
+                    <p id="temperature"></p>
+                    <p id="conditions"></p>
+                    <p id="wind"></p>
+                    <p id="windChill"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - <span id="author"></span> - <span class="place-title"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
